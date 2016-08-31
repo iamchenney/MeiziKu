@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:meizi="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movie_cover_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"/>
+    <com.chenney.meiziku.widget.LabelView
+        android:id="@+id/movie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        meizi:title="片名："
+        meizi:title_color="@color/cardview_shadow_end_color"
+        meizi:title_size="16dp"
+        meizi:text_color="@color/colorOrange"
+        meizi:text_size="16dp"/>
+
+    <com.chenney.meiziku.widget.LabelView
+        android:id="@+id/movie_director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/colorPrimaryDark"
+        meizi:title="导演："
+        meizi:title_color="@color/cardview_shadow_start_color"/>
+
+    <com.chenney.meiziku.widget.LabelView
+        android:id="@+id/movie_actor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/colorOrange"
+        meizi:title="演员："
+        meizi:title_color="@color/cardview_shadow_start_color"/>
+
+
+</LinearLayout>
